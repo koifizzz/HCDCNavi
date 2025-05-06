@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/actor</item>
+        <item>@font/aldrich</item>
+        <item>@font/amarante</item>
+        <item>@font/dotgothic16</item>
+        <item>@font/geostar_fill</item>
+        <item>@font/marvel</item>
+    </array>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/historyLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4E6C5"
+    tools:context=".LoginAsStudent">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="374dp"
+        android:layout_height="397dp"
+        android:layout_marginBottom="1dp"
+        android:background="#F5E7C6"
+        android:contentDescription="bgLogo"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046"
+        app:srcCompat="@drawable/gemini_generated_image_16hmem16hmem16hm" />
+
+    <TextView
+        android:id="@+id/txtHelloDescription2"
+        android:layout_width="187dp"
+        android:layout_height="51dp"
+        android:text="Welcome to Navi, your personal HCDC Facility Navigator"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565"
+        tools:text="Welcome to Navi, your personal HCDC Facility Navigator" />
+
+    <TextView
+        android:id="@+id/txtHello2"
+        android:layout_width="128dp"
+        android:layout_height="58dp"
+        android:text="Hello!"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48"
+        tools:text="Hello!" />
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="120dp"
+        android:text="Proceed"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogin"
+        app:layout_constraintVertical_bias="0.458"
+        app:strokeColor="#404040"
+        tools:text="Proceed" />
+
+    <EditText
+        android:id="@+id/txtLogin"
+        android:layout_width="245dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:text="Enter ID Number"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHelloDescription2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Enter ID Number" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="102dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="725dp"
+        android:layout_marginBottom="90dp"
+        android:text="to register click"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="83dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="154dp"
+        android:autoSizeTextType="none"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:text="here!"
+        android:textAlignment="center"
+        android:textColor="#7066EF"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        tools:text="here!" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

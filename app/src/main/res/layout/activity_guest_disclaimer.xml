@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/historyLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5E7C8"
+    tools:context=".GuestDisclaimer">
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="242dp"
+        android:layout_height="49dp"
+        android:text="Got it!"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86"
+        tools:text="Got it!" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="288dp"
+        android:layout_height="307dp"
+        android:layout_marginBottom="1dp"
+        android:background="#F5E7C6"
+        android:contentDescription="bgLogo"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094"
+        app:srcCompat="@drawable/gemini_generated_image_16hmem16hmem16hm" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="123dp"
+        android:layout_height="111dp"
+        android:layout_marginBottom="1dp"
+        android:background="#00F5E7C6"
+        android:contentDescription="bgLogo"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.306"
+        app:srcCompat="@drawable/pngtreevector_information_icon_4183763"
+        tools:srcCompat="@drawable/pngtreevector_information_icon_4183763" />
+
+    <TextView
+        android:id="@+id/txtDisclaimer"
+        android:layout_width="331dp"
+        android:layout_height="112dp"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="When logging in as Guest you are only limited to access the following facilities:"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtFacilities"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="When logging in as Guest you are only limited to access the following facilities:" />
+
+    <TextView
+        android:id="@+id/txtFacilities"
+        android:layout_width="198dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Admission Office           Registrar   Restrooms           Gym"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnOk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:text="Admission Office           Registrar   Restrooms           Gym" />
+</androidx.constraintlayout.widget.ConstraintLayout>
