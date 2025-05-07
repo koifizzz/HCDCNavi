@@ -35,15 +35,20 @@ public class Register extends AppCompatActivity {
                 editTextNewUserID.setError("User ID must be at least 8 characters");
                 return;
             }
+            if (!newUserId.startsWith("598")) {
+                editTextNewUserID.setError("Invalid User ID");
+                return;
+            }
             SharedPreferences prefs = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
             Set<String> userIds = prefs.getStringSet("saved_user_ids", new HashSet<>());
-            userIds = new HashSet<>(userIds); // Create modifiable copy
-            userIds.add(newUserId);
-            prefs.edit().putStringSet("saved_user_ids", userIds).apply();
+
             if (userIds.contains(newUserId)) {
                 editTextNewUserID.setError("User ID already exists");
                 return;
-            }
+            } else userIds = new HashSet<>(userIds); // Create modifiable copy
+            userIds.add(newUserId);
+            prefs.edit().putStringSet("saved_user_ids", userIds).apply();
+
             Toast.makeText(this, "Registered!", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(Register.this, LoginAsStudent.class));
             finish();

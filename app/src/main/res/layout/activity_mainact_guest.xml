@@ -91,7 +91,7 @@
         android:layout_width="327dp"
         android:layout_height="123dp"
         android:layout_marginTop="36dp"
-        android:text="I want to ask directions"
+        android:text="I want to ask for directions"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

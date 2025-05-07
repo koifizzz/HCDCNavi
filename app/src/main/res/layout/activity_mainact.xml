@@ -88,7 +88,7 @@
         android:layout_height="123dp"
         android:layout_marginStart="45dp"
         android:layout_marginEnd="39dp"
-        android:text="I want to ask directions"
+        android:text="I want to ask for directions"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/btnHistory"
         app:layout_constraintEnd_toEndOf="parent"
